@@ -1,10 +1,12 @@
 var butonSelector=document.querySelector("#but"); //selecteaza butonul
 var item=document.getElementById("inp");   ///select input
 var items = document.querySelector("ul"); //select list
-butonSelector.addEventListener("click",AddButtons)  
+
+butonSelector.addEventListener("click",AddButtons);
     
-function AddButtons(){
-    var addedItem=document.createElement("li");
+//Add Delete and Edit Buttons
+function AddButtons(){                                 
+    var addedItem=document.createElement("li");   //create list element
     addedItem.textContent=item.value;
     items.appendChild(addedItem);
     var button = document.createElement("button");
@@ -27,7 +29,8 @@ function AddButtons(){
     function Edit(){
         var parent=this.parentNode;
         var input=document.createElement("input");
-        parent.firstChilde.textContent="";
+         parent.firstChild.textContent="";
+         
        // console.log(parent.firstCild);
        //  parent.parentNode.innerHTML=input;
     }
