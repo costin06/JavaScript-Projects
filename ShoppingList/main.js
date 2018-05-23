@@ -1,29 +1,33 @@
 var butonSelector=document.querySelector("#but");
 var item=document.getElementById("inp");
 var items = document.querySelector("ul");
-butonSelector.onclick=function a(){
-   AddDel();
-   AddEdit();
-
-}
-var del=document.getElementById("del");
-del.addEventListener("click",function(){
-    var parent=this.parentNode;
-    parent.parentNode.removeChild(parent);
-    condole.log("deleted");
-})
-    function AddDel(){
+butonSelector.addEventListener("click",AddButtons)
+    
+function AddButtons(){
     var addedItem=document.createElement("li");
     addedItem.textContent=item.value;
     items.appendChild(addedItem);
     var button = document.createElement("button");
     button.innerHTML = "delete";
-    button.setAttribute("id","del");   
+    button.setAttribute("id","del");  
+    button.addEventListener("click",Delete);
     addedItem.appendChild(button);
-    }
-    function AddEdit(){
-        var button2 = document.createElement("button");
+    var button2 = document.createElement("button");
         button2.innerHTML = "edit";
-        button2.setAttribute("id","ed");   
+        button2.setAttribute("id","ed"); 
+        button2.addEventListener("click",Edit)  
         addedItem.appendChild(button2);
+    }
+  
+    function Delete(){                  //     for deleting item;
+        var parent=this.parentNode;
+        parent.parentNode.removeChild(parent);
+        condole.log("deleted");
+    }
+    function Edit(){
+        var parent=this.parentNode;
+        var input=document.createElement("input");
+        parent.firstChilde.textContent="";
+       // console.log(parent.firstCild);
+       //  parent.parentNode.innerHTML=input;
     }
