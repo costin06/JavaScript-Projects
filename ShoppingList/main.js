@@ -1,7 +1,7 @@
-var butonSelector=document.querySelector("#but");
-var item=document.getElementById("inp");
-var items = document.querySelector("ul");
-butonSelector.addEventListener("click",AddButtons)
+var butonSelector=document.querySelector("#but"); //selecteaza butonul
+var item=document.getElementById("inp");   ///select input
+var items = document.querySelector("ul"); //select list
+butonSelector.addEventListener("click",AddButtons)  
     
 function AddButtons(){
     var addedItem=document.createElement("li");
