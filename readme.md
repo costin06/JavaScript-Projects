@@ -5,3 +5,4 @@ Trainer: @Dragos Dehelean
 * [Simple JavaScript Slideshow](https://costin06.github.io/JavaScript-Projects/SlideShow/template.html)
 * [Events practice](https://costin06.github.io/JavaScript-Projects/)
 * [My Shopping List](https://costin06.github.io/JavaScript-Projects/ShoppingList/template.html)
+* [Greetings](https://costin06.github.io/JavaScript-Projects/Greetings/template.html)
