@@ -72,11 +72,13 @@ function Edit() {
                     tempSpan.textContent = tempValue;
                     parent.insertBefore(tempSpan, parent.firstChild);
                     parent.firstChild.style.display = "inline";
-                    canEdit = false;
+                    canEdit = true;
                 }
 
 
             });
+            canEdit=false;
+
         }
     }
 
