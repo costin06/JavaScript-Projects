@@ -55,9 +55,9 @@ function Delete() {
 
 //function for editing a li
 function Edit() {
-    let edit = true;
+    let canEdit = true;
     return function (event) {
-        if (edit===true) {
+        if (canEdit===true) {
             var parent = this.parentNode;
             var input = document.createElement("input");
             parent.firstChild.style.display = "none";
@@ -72,7 +72,7 @@ function Edit() {
                     tempSpan.textContent = tempValue;
                     parent.insertBefore(tempSpan, parent.firstChild);
                     parent.firstChild.style.display = "inline";
-                    edit = false;
+                    canEdit = false;
                 }
 
 
