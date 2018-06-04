@@ -58,6 +58,7 @@ function Edit(event) {
     var parent = this.parentNode;
     var input = document.createElement("input");
     parent.firstChild.style.display = "none";
+    input.value=parent.firstChild.textContent;
     parent.insertBefore(input, parent.firstChild);
     input.addEventListener("keyup", function (event) {
         event.preventDefault();
