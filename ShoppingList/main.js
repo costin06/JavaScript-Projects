@@ -26,7 +26,7 @@ function AddButtons() {
     var editButton = document.createElement("button");
     editButton.innerHTML = "edit";
     editButton.setAttribute("id", "ed");
-    editButton.addEventListener("click", Edit)
+    editButton.addEventListener("click", Edit())
     editButton.style.marginLeft = "4px";
 
     //Create and set attribute for Submit button
@@ -54,24 +54,32 @@ function Delete() {
 }
 
 //function for editing a li
-function Edit(event) {
-    var parent = this.parentNode;
-    var input = document.createElement("input");
-    parent.firstChild.style.display = "none";
-    input.value=parent.firstChild.textContent;
-    parent.insertBefore(input, parent.firstChild);
-    input.addEventListener("keyup", function (event) {
-        event.preventDefault();
-        if (event.keyCode === 13) { //verification if key ENTER is press
-            var tempValue = input.value;
-            parent.removeChild(parent.firstChild);
-            var tempSpan = document.createElement("span");
-            tempSpan.textContent = tempValue;
-            parent.insertBefore(tempSpan, parent.firstChild);
-            parent.firstChild.style.display = "inline";
+function Edit() {
+    let edit = true;
+    return function (event) {
+        if (edit===true) {
+            var parent = this.parentNode;
+            var input = document.createElement("input");
+            parent.firstChild.style.display = "none";
+            input.value = parent.firstChild.textContent;
+            parent.insertBefore(input, parent.firstChild);
+            input.addEventListener("keyup", function (event) {
+                event.preventDefault();
+                if (event.keyCode === 13) { //verification if key ENTER is press
+                    var tempValue = input.value;
+                    parent.removeChild(parent.firstChild);
+                    var tempSpan = document.createElement("span");
+                    tempSpan.textContent = tempValue;
+                    parent.insertBefore(tempSpan, parent.firstChild);
+                    parent.firstChild.style.display = "inline";
+                    edit = false;
+                }
 
+
+            });
         }
-    });
+    }
+
 }
 
 //function for submiting a li
