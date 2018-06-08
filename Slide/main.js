@@ -79,7 +79,7 @@ function meniuBilute(localIndex){
 function makeBilutaCallback(index){
     return function(){
         showImage(index);
-        meniuBilute(index);
+        meniuBilute(index);  
     }
 }
 
