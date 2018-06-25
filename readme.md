@@ -10,4 +10,4 @@ Trainer: @Dragos Dehelean
 * [Map Location](https://costin06.github.io/JavaScript-Projects/MapLocation/template.html)
 * [Gallery](https://costin06.github.io/JavaScript-Projects/gallery/index.html)
 * [DogoSelect](https://costin06.github.io/JavaScript-Projects/DogoSelect/index.html)
-* [FisierJson](https://github.com/costin06/JavaScript-Projects/numeColegi.json)
+* [FisierJson](https://costin06.github.io/JavaScript-Projects/numeColegi.json)
