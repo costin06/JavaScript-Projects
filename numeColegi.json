@@ -1,33 +1,33 @@
-{
-    "results":[{
-     "name":{
-         "first":"George",
-         "last":"Madalin"
-     },
-     "image":{
-         "src":"https://randomuser.me/api/"
-     },
-     "name":{
-        "first":"Davin",
-        "last":"Galati"
-    },
-    "image":{
-        "src":"https://randomuser.me/api/"
-    },
-    "name":{
-       "first":"Hutu",
-       "last":"Bogdan"
-   },
-   "image":{
-       "src":"https://randomuser.me/api/"
-   },
-   "name":{
-      "first":"Dragos",
-      "last":"Dehelean"
-  },
-  "image":{
-      "src":"https://randomuser.me/api/"
-  }
-    
-    }]
-}
+[{
+    "results": [{
+        "name": {
+            "first": "George",
+            "last": "Madalin"
+        },
+        "image": {
+            "src": "https://randomuser.me/api/"
+        }},{
+        "name": {
+            "first": "Davin",
+            "last": "Galati"
+        },
+        "image": {
+            "src": "https://randomuser.me/api/"
+        }},{
+        "name": {
+            "first": "Hutu",
+            "last": "Bogdan"
+        },
+        "image": {
+            "src": "https://randomuser.me/api/"
+        }},{
+        "name": {
+            "first": "Dragos",
+            "last": "Dehelean"
+        },
+        "image": {
+            "src": "https://randomuser.me/api/"
+        }}
+
+    ]
+}]
