@@ -9,8 +9,9 @@
                 "src": "https://randomuser.me/api/"
             },
             "calitati": ["Fun", "Smart", "Relaxed"],
-            "sex":["M"],
-            "casatorit":["true"]
+            "sex":"M",
+            "casatorit":true,
+            "varsta":39
         }, {
             "name": {
                 "adresare": "Mr.",
@@ -21,8 +22,9 @@
                 "src": "https://randomuser.me/api/"
             },
             "calitati": ["Fun", "Smart", "Relaxed"],
-            "sex":["M"],
-            "casatorit":["false"]
+            "sex":"M",
+            "casatorit":false,
+            "varsta":16
         }, {
             "name": {
                 "adresare": "Mr.",
@@ -33,8 +35,9 @@
                 "src": "https://randomuser.me/api/"
             },
             "calitati": ["Fun", "Smart", "Relaxed"],
-            "sex":["M"],
-            "casatorit":["true"]
+            "sex":"M",
+            "casatorit":true,
+            "varsta":40
         }, {
             "name": {
                 "adresare": "Mr.",
@@ -45,8 +48,9 @@
                 "src": "https://randomuser.me/api/"
             },
             "calitati": ["Fun", "Smart", "Relaxed"],
-            "sex":["M"],
-            "casatorit":["true"]
+            "sex":"M",
+            "casatorit":true,
+            "varsta":33
         }
 
     ]
