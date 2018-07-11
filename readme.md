@@ -11,3 +11,5 @@ Trainer: @Dragos Dehelean
 * [Gallery](https://costin06.github.io/JavaScript-Projects/gallery/index.html)
 * [DogoSelect](https://costin06.github.io/JavaScript-Projects/DogoSelect/index.html)
 * [FisierJson](https://costin06.github.io/JavaScript-Projects/numeColegi.json)
+* [SearchDogs](https://costin06.github.io/JavaScript-Projects/SearchBarDogs/index.html)
+
